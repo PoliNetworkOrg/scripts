@@ -26,7 +26,7 @@ do
      rm -r $e.git
      master=true
      wget https://gitlab.com/polinetwork/$e/-/archive/master/$e-master.zip || master=false
-     if master
+     if $master
      then
        unzip $e-master.zip -d $e
        rm $e-master.zip
