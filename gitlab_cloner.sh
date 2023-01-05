@@ -35,7 +35,7 @@ do
        rm $e-master/ -r
        git config --unset core.bare
        git add .
-       git push --set-upstream origin master
+       git branch --set-upstream-to master
      else
        wget https://gitlab.com/polinetwork/$e/-/archive/main/$e-main.zip
        unzip $e-main.zip -d $e
@@ -45,7 +45,7 @@ do
        rm $e-main/ -r
        git config --unset core.bare
        git add .
-       git push --set-upstream origin main
+       git branch --set-upstream-to main
      fi
      echo -e "${RED}git successfully initialized with result: ${NC}"
      git status
