@@ -12,5 +12,6 @@ do
    echo -e "${RED}creating |${arr[0]}| - |${arr[1]}| - |${arr[2]}|${NC}"
    curl --request POST --header "PRIVATE-TOKEN: $1" \
      --header "Content-Type: application/json" --data '{"name": "'"${arr[1]}"'", "description": "'"${arr[2]}"'", "path": "'"${arr[0]}"'", "namespace_id": "4827903", "initialize_with_readme": "true"}' --url 'https://gitlab.com/api/v4/projects/'
+   # curl --request PUT --header "PRIVATE-TOKEN: $1" --url https://gitlab.com/api/v4/projects/polinetwork%2F${arr[0]} --data "visibility=public"
    sleep 5
 done
