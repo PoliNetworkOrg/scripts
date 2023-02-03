@@ -3,7 +3,7 @@
 RED='\033[0;31m'
 NC='\033[0m'
 
-courses=( AES,aero1y,aero2y,AES1y,AES2y,AES3y,AES_corsi6cfu,space1y,space2y Automazione,automazione1y,automazione2y,automazione3y Chimica,chimica1y,chimica2y,chimica3y Info,info1y,info2y,info3y,CompSc,CompSc1,CompSc2 Electronics,elettronica1y,elettronica2y,elettronica3y Energetica,energetica1y,energetica2y,energetica3y MatNano,matnano1y,matnano2y,matnano3y Meccanica,meccanica1y,meccanica2y,meccanica3y MobilityMD,mobilityMDy1,mobilityMDy2 )
+courses=( AES,aero1y,aero2y,AES1y,AES2y,AES3y,AES_corsi6cfu,space1y,space2y Automazione,automazione1y,automazione2y,automazione3y Chimica,chimica1y,chimica2y,chimica3y Info,info1y,info2y,info3y,CompSc,CompSc1,CompSc2 Electronics,elettronica1y,elettronica2y,elettronica3y Energetica,energetica1y,energetica2y,energetica3y MatNano,matnano1y,matnano2y,matnano3y Meccanica,meccanica1y,meccanica2y,meccanica3y MobilityMD,mobilityMDy1,mobilityMDy2 Bioinformatics,Bioinformatics Management,Gest1y,Gest2y,Gest3y,Manag1y,Manag2y Mechanical,Mech1y,Mech2y,Mech3y Design,DES-Moda,DES-Interni,DES-Comm,DES-Prod )
 
 echo -e "${RED}starting work ${NC}"
 for i in "${courses[@]}"
