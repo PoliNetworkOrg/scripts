@@ -42,6 +42,7 @@ do
    do
      cd $e
      echo -e "${RED}pushing for $e ${NC}"
+     git config pull.rebase false
      git pull
      git push https://polibot:"$ENCODED_PASSWORD"@gitlab.com/polinetwork/$e.git --all
      cd ..
